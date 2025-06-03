@@ -1,1 +1,10 @@
-streamlit-chat 
+streamlit
+streamlit-chat
+streamlit-option-menu
+openai
+langchain
+faiss-cpu
+transformers
+pandas
+numpy
+requests 
