@@ -2,6 +2,10 @@
 
 A Streamlit-based intelligent chat application that integrates Azure OpenAI and Azure Cognitive Search services to provide document-based question answering capabilities.
 
+## ⚠️ Disclaimer
+
+**This is sample/demonstration code only and is not intended for production use.** This application is provided for educational and testing purposes to showcase integration between Azure OpenAI and Azure Cognitive Search services. For production deployments, please ensure proper security measures, error handling, monitoring, and compliance with your organization's requirements.
+
 ## Features
 
 - **Direct Chat Interface**: Direct conversation with Azure OpenAI GPT models
@@ -222,7 +226,7 @@ Set `DEBUG = "1"` in `credentials.py` to enable additional logging.
 
 ## License
 
-This project is provided as-is for demonstration purposes. Please ensure compliance with Azure service terms and conditions.
+This project is provided as-is for demonstration and educational purposes only. **This code is not production-ready and should not be used in production environments** without significant modifications, testing, and security enhancements. Please ensure compliance with Azure service terms and conditions.
 
 ## Support
 
