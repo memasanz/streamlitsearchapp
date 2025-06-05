@@ -3,8 +3,12 @@ streamlit-chat
 streamlit-option-menu
 openai
 langchain
+langchain-community
+langchain-openai
 faiss-cpu
 transformers
 pandas
 numpy
-requests 
+requests
+pytest
+pytest-mock

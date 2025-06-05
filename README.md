@@ -117,6 +117,57 @@ The application will start on `http://localhost:8501`
 - Uses Cognitive Search to find relevant content
 - Combines search results with OpenAI for comprehensive answers
 
+## Testing
+
+The application includes comprehensive unit and integration tests to ensure reliability and maintainability.
+
+### Running Tests
+
+#### Quick Test Run
+```bash
+python -m pytest tests/ -v
+```
+
+#### Using the Test Runner
+```bash
+# Run all tests with verbose output
+python run_tests.py -v
+
+# Run specific test file
+python run_tests.py -f test_webapp.py
+
+# Run tests with coverage reporting
+python run_tests.py -c
+
+# Run tests matching a pattern
+python run_tests.py -k "test_credentials"
+```
+
+### Test Structure
+
+- **`tests/test_webapp.py`** - Tests for UI utility functions and configuration management
+- **`tests/test_cog_search.py`** - Tests for Azure Cognitive Search and OpenAI integration
+- **`tests/test_integration.py`** - Integration tests ensuring components work together
+- **`tests/README.md`** - Detailed testing documentation
+
+### Test Coverage
+
+The tests cover:
+- Core class initialization and methods
+- Configuration management and validation
+- Azure API request formatting
+- Error handling and edge cases
+- Integration between components
+- File structure and requirements validation
+
+### Dependencies
+
+Testing requires these additional packages (included in requirements.txt):
+- `pytest` - Testing framework
+- `pytest-mock` - Mocking utilities
+
+All tests use mocking to avoid external API calls during testing.
+
 ## Configuration Options
 
 ### Question Templates
