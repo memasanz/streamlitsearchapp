@@ -6,12 +6,11 @@ import json
 import numpy as np
 import os
 
-from langchain.llms import AzureOpenAI
-#from langchain import FAISS
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OpenAIEmbeddings
+from langchain_community.llms import AzureOpenAI
+from langchain_community.vectorstores import FAISS
+from langchain_community.embeddings import OpenAIEmbeddings
 from langchain.chains.question_answering import load_qa_chain
-from openai.embeddings_utils import get_embedding, cosine_similarity
+# Note: openai.embeddings_utils is deprecated, using direct openai client instead
 import openai
 from transformers import GPT2TokenizerFast
 import pandas as pd
