@@ -56,6 +56,28 @@ A Streamlit-based intelligent chat application that integrates Azure OpenAI and 
    ```
 
 2. **Install dependencies**
+
+   ### Required Packages
+
+   | Package | Purpose | Usage in Application |
+   |---------|---------|---------------------|
+   | streamlit | Web framework | Main application interface and UI components |
+   | streamlit-chat | Chat interface | Chat message display and conversation UI |
+   | streamlit-option-menu | Navigation menu | Main navigation menu between app sections |
+   | openai | OpenAI API client | Azure OpenAI integration for chat and embeddings |
+   | langchain | LLM framework | Document processing, Q&A chains, and embeddings |
+   | faiss-cpu | Vector similarity search | Similarity search for document retrieval |
+   | transformers | NLP models | Tokenization for text processing |
+   | pandas | Data manipulation | Data handling and processing |
+   | numpy | Numerical operations | Array operations and mathematical functions |
+   | requests | HTTP client | API calls to Azure services |
+
+   Install all dependencies at once:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   Or install individually:
    ```bash
    pip install streamlit
    pip install streamlit-chat
